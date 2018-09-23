@@ -41,7 +41,7 @@ class PhoneRecords
         $this->sortPhoneData();
         $phoneDataSorted = $this->phoneData;
         $phoneArraySize = count($phoneDataSorted);
-        $currActivationDate = 0;
+        $currActivationDate = null;
         for($i = $phoneArraySize-1; $i>=0; $i--){
             $currActivationDate = $phoneDataSorted[$i]['activationDate'];
             if($currActivationDate == $phoneDataSorted[$i-1]['deactivationDate']){
