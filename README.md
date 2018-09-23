@@ -64,8 +64,11 @@ Assessment of Trusting Social
 
     }
     ```
+```
 - Major Data Structure Used: <b>Associative Array</b>
 - Algorithm used: For sorting <b>usort</b> which is based on Quick Sort (Θ(n log(n)).
-``` Suppose there a N phone numbers of M users and phoneNumber per User z. 
+
+Suppose there a N phone numbers of M users and phoneNumber per User z. 
 Time & Space Complexity: Θ(N(zlog(z))) where z is the frequency of phone numbers used.
+```
 
