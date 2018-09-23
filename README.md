@@ -19,9 +19,9 @@ Assessment of Trusting Social
 
 
 ### Run
-- To generate ActualActivation csv file run follow cmd: 
- -- ``` php main/console/actualActivationDate.php <InputFileName> ```
-Note: Input file must be present in ConsoleDocuments folder
+- To generate ActualActivation csv file run follow cmd: <br>
+  ``` php main/console/actualActivationDate.php <InputFileName> ```
+#### Note: Input file must be present in ConsoleDocuments folder
 
-- To run Test Casess:
- -- ``` php vendor/bin/codecept run unit ExampleTest ```
+- To run Test Casess: <br>
+``` php vendor/bin/codecept run unit ExampleTest ```
