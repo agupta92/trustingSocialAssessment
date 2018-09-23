@@ -30,7 +30,7 @@ Assessment of Trusting Social
 - First while taking input, form a Hash Map in which PhoneNumber is a key, and all occurance of activation and deactivation data as value.
 - Iterating each phone number, and sort date ranges based on activationDate.
 - After sorting, start backward iteration on date range making activationDate as currentActivationDate, and check if currentActivationDate == previous date range deactivation date. If yes, then make currentActivationDate = previous date range activationDate. Continue while above condition gets false. After false, break the loop and currentActivationDate is the current owner activation date as per the requirement.
-- Code Snipet of Major Two Function
+- Code Snipet of Major Two Functions:
 ```/**
      * DESC: Sort the phone data and calculate Actual Activation date of Current User.
      * @return array
@@ -64,3 +64,8 @@ Assessment of Trusting Social
 
     }
     ```
+- Major Data Structure Used: <b>Associative Array</b>
+- Algorithm used: For sorting <b>usort</b> which is based on Quick Sort (Θ(n log(n)).
+``` Suppose there a N phone numbers of M users and phoneNumber per User z. 
+Time & Space Complexity: Θ(N(zlog(z))) where z is the frequency of phone numbers used.
+
