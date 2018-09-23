@@ -1,0 +1,5 @@
+{
+    "require": {
+        "bcremer/line-reader": "^1.0"
+    }
+}
