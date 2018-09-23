@@ -1,5 +1,6 @@
 {
     "require": {
-        "bcremer/line-reader": "^1.0"
+        "bcremer/line-reader": "^1.0",
+        "codeception/codeception" : "2.4.5"
     }
 }

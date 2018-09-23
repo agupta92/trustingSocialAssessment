@@ -11,6 +11,22 @@ class PhoneRecords
     private $phoneNumber;
     private $phoneData;
 
+    /**
+     * @return mixed
+     */
+    public function getPhoneNumber()
+    {
+        return $this->phoneNumber;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPhoneData()
+    {
+        return $this->phoneData;
+    }
+
     function __construct($phoneNumber, $phoneData)
     {
         $this->phoneNumber = $phoneNumber;

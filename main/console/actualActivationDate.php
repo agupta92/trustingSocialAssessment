@@ -14,6 +14,10 @@ $inputFilePath = __DIR__. '/../consoleDocuments/'. $inputFileName;
 
 
 $phoneMappingArray = InputOutput::readFileAndFilterData($inputFilePath);
+if(!$phoneMappingArray){
+    echo "Error reading file".PHP_EOL;
+    exit;
+}
 //Write header of Output CSV
 InputOutput::writeFile($inputFilePath.'-Output', ['PHONE_NUMBER','REAL_ACTIVATION_DATE']);
 

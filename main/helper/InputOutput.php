@@ -5,6 +5,7 @@
  * Date: 22/09/18
  * Time: 10:44 PM
  */
+namespace main\helper;
 
 include_once (__DIR__."/../../vendor/autoload.php");
 use Bcremer\LineReader\LineReader;
@@ -16,6 +17,9 @@ class InputOutput
      * @return array Mapping of PhoneNumber with all the activation/de-activation records within it.
      */
     public static function readFileAndFilterData($filePath){
+        if(!self::checkFileExists($filePath)){
+            return false;
+        }
         $phoneMapping = [];
         foreach (LineReader::readLines($filePath) as $line) {
             $lineArray = explode(',', $line);
@@ -37,4 +41,7 @@ class InputOutput
         fclose($file);
     }
 
+    public static function checkFileExists($filePath){
+        return file_exists($filePath);
+    }
 }
